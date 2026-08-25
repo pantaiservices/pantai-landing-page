@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-T1S0Z46B62"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -17,13 +16,11 @@
     <meta name="description" content="Especialistas em ajustes de roupas, troca de zíper, bainha, confecção em tecidos com elastano, biquínis sob medida, reformas e customização. Agende seu horário!">
     <meta name="keywords" content="consertos de roupas, ajustes, troca de zíper, bainha, elastano, biquíni sob medida, reformas, ateliê de costura, customização">
 
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
 
-    
     <meta property="og:title" content="Pantai Consertos e Ajustes | Ateliê Privativo">
     <meta property="og:description" content="Dê uma nova vida ao seu vestuário com atendimento rápido e personalizado. Agende seu horário!">
     <meta property="og:type" content="website">
@@ -57,9 +54,14 @@
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans">
 
-    <header class="bg-gradient-to-r from-teal-600 to-cyan-700 text-white py-20 px-4 text-center">
-        <div class="max-w-3xl mx-auto">
-            <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+    <!-- HEADER COM LOGO -->
+    <header class="bg-gradient-to-r from-teal-600 to-cyan-700 text-white py-16 px-4 text-center">
+        <div class="max-w-3xl mx-auto flex flex-col items-center">
+            
+            <!-- Logo -->
+            <img src="./logo.png" alt="Logo Pantai Consertos e Ajustes" class="w-28 h-28 md:w-36 md:h-36 object-contain mb-4 rounded-full bg-white/10 p-2 shadow-md">
+
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">
                 Pantai Consertos e Ajustes<br>
                 <span class="text-2xl md:text-3xl font-medium text-teal-100 mt-2 block">Ateliê Privativo</span>
             </h1>
@@ -87,26 +89,12 @@
         </div>
     </section>
 
+    <!-- SEÇÃO DE SERVIÇOS -->
     <section class="w-full bg-slate-100 py-16 px-4">
         <h2 class="text-4xl md:text-5xl font-bold mb-6 text-center">Nossos Serviços</h2>
         <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
             
-            <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow flex flex-col justify-between">
-                <div>
-                    <img class="w-full h-48 object-cover" src="https://blog.maximustecidos.com.br/wp-content/uploads/2023/07/Como-Trocar-Ziper0202.webp" alt="Troca de zíper em calça e peças de roupa" loading="lazy">
-                    <div class="p-5">
-                        <span class="text-xs font-semibold text-blue-600 uppercase">Costura</span>
-                        <h3 class="text-xl font-bold text-slate-800 mt-1 mb-2">Troca de Zíper</h3>
-                        <p class="text-sm text-slate-600 leading-relaxed">Trocamos o zíper das suas peças de roupa.</p>
-                    </div>
-                </div>
-                <div class="px-5 pb-5">
-                    <button onclick="abrirModal('modalZiper')" class="text-sm font-semibold text-blue-600 hover:text-blue-800 focus:outline-none">
-                        Saiba mais →
-                    </button>
-                </div>
-            </div>
-
+            <!-- 1. Bainha -->
             <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow flex flex-col justify-between">
                 <div>
                     <img class="w-full h-48 object-cover" src="https://blog.maximustecidos.com.br/wp-content/uploads/2023/07/como-fazer-bainha01.webp" alt="Serviço de bainha em calças e saias" loading="lazy">
@@ -123,22 +111,7 @@
                 </div>
             </div>
 
-            <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow flex flex-col justify-between">
-                <div>
-                    <img class="w-full h-48 object-cover" src="https://blog.maximustecidos.com.br/wp-content/uploads/2023/07/tipos-de-consertos-de-roupas02.webp" alt="Consertos em geral de vestuário" loading="lazy">
-                    <div class="p-5">
-                        <span class="text-xs font-semibold text-amber-600 uppercase">Costura</span>
-                        <h3 class="text-xl font-bold text-slate-800 mt-1 mb-2">Consertos em Geral</h3>
-                        <p class="text-sm text-slate-600 leading-relaxed">Fazemos os principais tipos de consertos em sua roupa.</p>
-                    </div>
-                </div>
-                <div class="px-5 pb-5">
-                    <button onclick="abrirModal('modalConsertos')" class="text-sm font-semibold text-amber-600 hover:text-amber-800 focus:outline-none">
-                        Saiba mais →
-                    </button>
-                </div>
-            </div>
-
+            <!-- 2. Ajuste de Medidas -->
             <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow flex flex-col justify-between">
                 <div>
                     <img class="w-full h-48 object-cover" src="https://www.acillimeira.com.br/images/upload/images/Roupas_sob_medida.jpg" alt="Ajuste de medidas e laterais de roupas" loading="lazy">
@@ -155,54 +128,24 @@
                 </div>
             </div>
 
+            <!-- 3. Troca de Zíper -->
             <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow flex flex-col justify-between">
                 <div>
-                    <img class="w-full h-48 object-cover" src="https://blog.maximustecidos.com.br/wp-content/uploads/2020/09/maximus-tecidos_00014-2.jpg" alt="Troca de forro e conserto de bolsos" loading="lazy">
+                    <img class="w-full h-48 object-cover" src="https://blog.maximustecidos.com.br/wp-content/uploads/2023/07/Como-Trocar-Ziper0202.webp" alt="Troca de zíper em calça e peças de roupa" loading="lazy">
                     <div class="p-5">
-                        <span class="text-xs font-semibold text-indigo-600 uppercase">Costura</span>
-                        <h3 class="text-xl font-bold text-slate-800 mt-1 mb-2">Forros e Bolsos</h3>
-                        <p class="text-sm text-slate-600 leading-relaxed">Troca de forro interno danificado e conserto ou confecção de bolsos.</p>
+                        <span class="text-xs font-semibold text-blue-600 uppercase">Costura</span>
+                        <h3 class="text-xl font-bold text-slate-800 mt-1 mb-2">Troca de Zíper</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Trocamos o zíper das suas peças de roupa.</p>
                     </div>
                 </div>
                 <div class="px-5 pb-5">
-                    <button onclick="abrirModal('modalForros')" class="text-sm font-semibold text-indigo-600 hover:text-indigo-800 focus:outline-none">
+                    <button onclick="abrirModal('modalZiper')" class="text-sm font-semibold text-blue-600 hover:text-blue-800 focus:outline-none">
                         Saiba mais →
                     </button>
                 </div>
             </div>
 
-            <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow flex flex-col justify-between">
-                <div>
-                    <img class="w-full h-48 object-cover" src="https://blog.taco.com.br/wp-content/uploads/2024/07/aplicacoes.jpg" alt="Customização e transformação de peças" loading="lazy">
-                    <div class="p-5">
-                        <span class="text-xs font-semibold text-purple-600 uppercase">Costura</span>
-                        <h3 class="text-xl font-bold text-slate-800 mt-1 mb-2">Customização</h3>
-                        <p class="text-sm text-slate-600 leading-relaxed">Renove e transforme suas roupas com detalhes exclusivos.</p>
-                    </div>
-                </div>
-                <div class="px-5 pb-5">
-                    <button onclick="abrirModal('modalCustomizacao')" class="text-sm font-semibold text-purple-600 hover:text-purple-800 focus:outline-none">
-                        Saiba mais →
-                    </button>
-                </div>
-            </div>
-
-            <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow flex flex-col justify-between">
-                <div>
-                    <img class="w-full h-48 object-cover" src="https://blog.maximustecidos.com.br/wp-content/uploads/2023/07/tipos-de-consertos-de-roupas01.webp" alt="Confecção em roupas de tecido com elastano" loading="lazy">
-                    <div class="p-5">
-                        <span class="text-xs font-semibold text-pink-600 uppercase">Confecção</span>
-                        <h3 class="text-xl font-bold text-slate-800 mt-1 mb-2">Roupas com Elastano</h3>
-                        <p class="text-sm text-slate-600 leading-relaxed">Confecção e ajustes especializados em roupas de tecidos com elastano.</p>
-                    </div>
-                </div>
-                <div class="px-5 pb-5">
-                    <button onclick="abrirModal('modalElastano')" class="text-sm font-semibold text-pink-600 hover:text-pink-800 focus:outline-none">
-                        Saiba mais →
-                    </button>
-                </div>
-            </div>
-
+            <!-- 4. Biquíni Sob Medida -->
             <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow flex flex-col justify-between">
                 <div>
                     <img class="w-full h-48 object-cover" src="https://www.revistaartesanato.com.br/wp-content/uploads/2016/09/costura-a-maquina.jpg" alt="Fabricação de biquíni sob medida" loading="lazy">
@@ -219,6 +162,92 @@
                 </div>
             </div>
 
+            <!-- 5. Aperto e Ajuste de Biquíni -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow flex flex-col justify-between">
+                <div>
+                    <img class="w-full h-48 object-cover" src="https://blog.maximustecidos.com.br/wp-content/uploads/2023/07/tipos-de-consertos-de-roupas01.webp" alt="Aperto e ajuste de biquíni" loading="lazy">
+                    <div class="p-5">
+                        <span class="text-xs font-semibold text-cyan-600 uppercase">Moda Praia</span>
+                        <h3 class="text-xl font-bold text-slate-800 mt-1 mb-2">Aperto de Biquíni</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Ajustamos peças folgadas para garantir sustentação e conforto.</p>
+                    </div>
+                </div>
+                <div class="px-5 pb-5">
+                    <button onclick="abrirModal('modalApertoBiquini')" class="text-sm font-semibold text-cyan-600 hover:text-cyan-800 focus:outline-none">
+                        Saiba mais →
+                    </button>
+                </div>
+            </div>
+
+            <!-- 6. Roupas com Elastano -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow flex flex-col justify-between">
+                <div>
+                    <img class="w-full h-48 object-cover" src="https://blog.maximustecidos.com.br/wp-content/uploads/2023/07/tipos-de-consertos-de-roupas01.webp" alt="Confecção em roupas de tecido com elastano" loading="lazy">
+                    <div class="p-5">
+                        <span class="text-xs font-semibold text-pink-600 uppercase">Confecção</span>
+                        <h3 class="text-xl font-bold text-slate-800 mt-1 mb-2">Roupas com Elastano</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Confecção e ajustes especializados em roupas de tecidos com elastano.</p>
+                    </div>
+                </div>
+                <div class="px-5 pb-5">
+                    <button onclick="abrirModal('modalElastano')" class="text-sm font-semibold text-pink-600 hover:text-pink-800 focus:outline-none">
+                        Saiba mais →
+                    </button>
+                </div>
+            </div>
+
+            <!-- 7. Forros e Bolsos -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow flex flex-col justify-between">
+                <div>
+                    <img class="w-full h-48 object-cover" src="https://blog.maximustecidos.com.br/wp-content/uploads/2020/09/maximus-tecidos_00014-2.jpg" alt="Troca de forro e conserto de bolsos" loading="lazy">
+                    <div class="p-5">
+                        <span class="text-xs font-semibold text-indigo-600 uppercase">Costura</span>
+                        <h3 class="text-xl font-bold text-slate-800 mt-1 mb-2">Forros e Bolsos</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Troca de forro interno danificado e conserto ou confecção de bolsos.</p>
+                    </div>
+                </div>
+                <div class="px-5 pb-5">
+                    <button onclick="abrirModal('modalForros')" class="text-sm font-semibold text-indigo-600 hover:text-indigo-800 focus:outline-none">
+                        Saiba mais →
+                    </button>
+                </div>
+            </div>
+
+            <!-- 8. Consertos em Geral -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow flex flex-col justify-between">
+                <div>
+                    <img class="w-full h-48 object-cover" src="https://blog.maximustecidos.com.br/wp-content/uploads/2023/07/tipos-de-consertos-de-roupas02.webp" alt="Consertos em geral de vestuário" loading="lazy">
+                    <div class="p-5">
+                        <span class="text-xs font-semibold text-amber-600 uppercase">Costura</span>
+                        <h3 class="text-xl font-bold text-slate-800 mt-1 mb-2">Consertos em Geral</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Fazemos os principais tipos de consertos em sua roupa.</p>
+                    </div>
+                </div>
+                <div class="px-5 pb-5">
+                    <button onclick="abrirModal('modalConsertos')" class="text-sm font-semibold text-amber-600 hover:text-amber-800 focus:outline-none">
+                        Saiba mais →
+                    </button>
+                </div>
+            </div>
+
+            <!-- 9. Customização -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow flex flex-col justify-between">
+                <div>
+                    <img class="w-full h-48 object-cover" src="https://blog.taco.com.br/wp-content/uploads/2024/07/aplicacoes.jpg" alt="Customização e transformação de peças" loading="lazy">
+                    <div class="p-5">
+                        <span class="text-xs font-semibold text-purple-600 uppercase">Costura</span>
+                        <h3 class="text-xl font-bold text-slate-800 mt-1 mb-2">Customização</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">Renove e transforme suas roupas com detalhes exclusivos.</p>
+                    </div>
+                </div>
+                <div class="px-5 pb-5">
+                    <button onclick="abrirModal('modalCustomizacao')" class="text-sm font-semibold text-purple-600 hover:text-purple-800 focus:outline-none">
+                        Saiba mais →
+                    </button>
+                </div>
+            </div>
+
+            <!-- 10. Reformas e Restaurações -->
             <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow flex flex-col justify-between">
                 <div>
                     <img class="w-full h-48 object-cover" src="https://blog.maximustecidos.com.br/wp-content/uploads/2023/07/curso-de-ajustes-e-consertos-de-roupas03.webp" alt="Reformas e restaurações de vestuário" loading="lazy">
@@ -238,6 +267,33 @@
         </div>
     </section>
 
+    <!-- SEÇÃO DE PROVA SOCIAL / DEPOIMENTOS (COM NOMES FICTÍCIOS) -->
+    <section class="w-full bg-teal-50 py-16 px-4 border-y border-teal-100">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-slate-800">O que Nossas Clientes Dizem</h2>
+            <p class="text-slate-600 mb-10">A satisfação e o caimento perfeito são a nossa marca registrada.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+                <!-- Depoimento 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex flex-col justify-between">
+                    <p class="text-sm text-slate-600 italic mb-4">"O biquíni sob medida ficou impecável! Perfeito no corpo, com uma sustentação maravilhosa."</p>
+                    <span class="text-xs font-bold text-teal-700">— Camila Sampaio</span>
+                </div>
+                <!-- Depoimento 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex flex-col justify-between">
+                    <p class="text-sm text-slate-600 italic mb-4">"Levei calças para fazer a bainha original e ajustar a cintura. Trabalho extremamente limpo e rápido!"</p>
+                    <span class="text-xs font-bold text-teal-700">— Juliana de Souza</span>
+                </div>
+                <!-- Depoimento 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex flex-col justify-between">
+                    <p class="text-sm text-slate-600 italic mb-4">"Atendimento super exclusivo e atencioso. Salvou minhas roupas de festa que precisavam de ajustes urgentes."</p>
+                    <span class="text-xs font-bold text-teal-700">— Beatriz Mendes</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAIS DE SERVIÇOS -->
     <div id="modalZiper" class="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 hidden px-4">
         <div class="bg-white rounded-2xl max-w-lg w-full p-6 shadow-2xl relative">
             <button onclick="fecharModal('modalZiper')" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 text-xl font-bold">✕</button>
@@ -284,12 +340,12 @@
             <span class="text-xs font-semibold text-amber-600 uppercase bg-amber-50 px-2 py-1 rounded">Detalhes do Serviço</span>
             <h3 class="text-2xl font-bold text-slate-800 mt-2 mb-4">Consertos em Geral</h3>
             <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                Deu defeito ou rasgou? Cuidamos dos principais reparos e manutenções que suas peças precisam para voltar a ser usadas com total segurança e conforto.
+                Deu defeito ou rasgou? Cuidamos de pequenos reparos e manutenções rápidas para suas peças voltarem a ser usadas com total segurança e conforto.
             </p>
             <ul class="text-sm text-slate-700 space-y-2 mb-6">
-                <li>✔ Reparos em rasgos e pequenos furos</li>
-                <li>✔ Troca e reforço de botões e colchetes</li>
-                <li>✔ Soluções personalizadas para o seu vestuário</li>
+                <li>✔ Reparos em rasgos, furos e desfiados</li>
+                <li>✔ Troca, ajuste e reforço de botões, colchetes e ilhoses</li>
+                <li>✔ Fechamento de costuras que abriram</li>
             </ul>
             <div class="flex justify-end gap-3">
                 <button onclick="fecharModal('modalConsertos')" class="px-4 py-2 bg-slate-200 hover:bg-slate-300 text-slate-700 text-sm font-semibold rounded-lg transition">Fechar</button>
@@ -324,12 +380,12 @@
             <span class="text-xs font-semibold text-indigo-600 uppercase bg-indigo-50 px-2 py-1 rounded">Detalhes do Serviço</span>
             <h3 class="text-2xl font-bold text-slate-800 mt-2 mb-4">Troca de Forro e Conserto de Bolsos</h3>
             <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                O forro da sua jaqueta ou blazer rasgou? O bolso da calça abriu? Realizamos a substituição completa de forros internos e o reparo estruturado de bolsos para devolver a funcionalidade e a vida útil à sua roupa.
+                O forro interno desgastou ou o bolso abriu? Realizamos a substituição completa de forros e a reestruturação de bolsos para devolver a funcionalidade e o acabamento original à sua peça.
             </p>
             <ul class="text-sm text-slate-700 space-y-2 mb-6">
-                <li>✔ Substituição de forros para casacos e blazers</li>
-                <li>✔ Reparo e costura interna de bolsos furados</li>
-                <li>✔ Materiais macios, resistentes e confortáveis</li>
+                <li>✔ Substituição de forros para casacos, blazers e saias</li>
+                <li>✔ Reestruturação e costura interna de bolsos danificados</li>
+                <li>✔ Uso de tecidos internos macios, resistentes e confortáveis</li>
             </ul>
             <div class="flex justify-end gap-3">
                 <button onclick="fecharModal('modalForros')" class="px-4 py-2 bg-slate-200 hover:bg-slate-300 text-slate-700 text-sm font-semibold rounded-lg transition">Fechar</button>
@@ -392,11 +448,31 @@
                 <li>✔ Tecidos de alta qualidade próprios para moda praia</li>
                 <li>✔ Acabamento profissional com caimento perfeito</li>
                 <li>✔ Modelagem a partir do seu biquíni preferido</li>
-                
             </ul>
             <div class="flex justify-end gap-3">
                 <button onclick="fecharModal('modalBiquini')" class="px-4 py-2 bg-slate-200 hover:bg-slate-300 text-slate-700 text-sm font-semibold rounded-lg transition">Fechar</button>
                 <a href="https://wa.me/+5521979735908?text=Olá! Gostaria de encomendar um biquíni sob medida." target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-green-500 hover:bg-green-600 text-white text-sm font-semibold rounded-lg transition">Fazer Orçamento no WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalApertoBiquini" class="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 hidden px-4">
+        <div class="bg-white rounded-2xl max-w-lg w-full p-6 shadow-2xl relative">
+            <button onclick="fecharModal('modalApertoBiquini')" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 text-xl font-bold">✕</button>
+            <span class="text-xs font-semibold text-cyan-600 uppercase bg-cyan-50 px-2 py-1 rounded">Moda Praia</span>
+            <h3 class="text-2xl font-bold text-slate-800 mt-2 mb-4">Aperto e Ajuste de Biquíni</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                Comprou um biquíni que ficou grande, a calcinha está folgada ou o sutiã perdeu a sustentação? Realizamos ajustes precisos em peças de moda praia, preservando a elasticidade e o acabamento original para você curtir a praia com total segurança.
+            </p>
+            <ul class="text-sm text-slate-700 space-y-2 mb-6">
+                <li>✔ Ajuste de largura e altura em calcinhas de biquíni</li>
+                <li>✔ Aperto nas alças e reestruturação de top/sutiã</li>
+                <li>✔ Uso de linhas e elásticos próprios para água e cloro</li>
+                <li>✔ Acabamento invisível e costura flexível</li>
+            </ul>
+            <div class="flex justify-end gap-3">
+                <button onclick="fecharModal('modalApertoBiquini')" class="px-4 py-2 bg-slate-200 hover:bg-slate-300 text-slate-700 text-sm font-semibold rounded-lg transition">Fechar</button>
+                <a href="https://wa.me/+5521979735908?text=Olá! Gostaria de fazer um orçamento para ajuste e aperto de biquíni." target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-green-500 hover:bg-green-600 text-white text-sm font-semibold rounded-lg transition">Fazer Orçamento no WhatsApp</a>
             </div>
         </div>
     </div>
