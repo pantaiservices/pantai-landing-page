@@ -266,42 +266,42 @@
         </div>
     </section>
 
-    <!-- SEÇÃO DE DEPOIMENTOS EM CARROSSEL -->
+    <!-- SEÇÃO DE DEPOIMENTOS EM CARROSSEL (OTIMIZADA PARA MOBILE) -->
     <section class="w-full bg-teal-50 py-16 px-4 border-y border-teal-100">
         <div class="max-w-3xl mx-auto text-center relative">
             <h2 class="text-3xl md:text-4xl font-bold mb-2 text-slate-800">O que Nossas Clientes Dizem</h2>
             <p class="text-slate-600 mb-10">A satisfação e o caimento perfeito são a nossa marca registrada.</p>
             
-            <div class="relative overflow-hidden min-h-[160px] flex items-center justify-center">
+            <div class="relative overflow-hidden flex flex-col items-center justify-center">
                 
                 <!-- Depoimento 1: Camila Sampaio -->
-                <div class="dep-slide transition-all duration-500 absolute w-full px-6 opacity-100 translate-x-0">
-                    <div class="bg-white p-8 rounded-2xl shadow-md border border-slate-100 text-center">
-                        <p class="text-base text-slate-600 italic mb-4">"O biquíni sob medida ficou impecável! Perfeito no corpo, com uma sustentação maravilhosa."</p>
+                <div class="dep-slide transition-all duration-500 absolute w-full px-4 md:px-6 opacity-100 translate-x-0 relative static">
+                    <div class="bg-white p-6 md:p-8 rounded-2xl shadow-md border border-slate-100 text-center">
+                        <p class="text-sm md:text-base text-slate-600 italic mb-4 leading-relaxed">"O biquíni sob medida ficou impecável! Perfeito no corpo, com uma sustentação maravilhosa."</p>
                         <span class="text-sm font-bold text-teal-700">— Camila Sampaio</span>
                     </div>
                 </div>
 
                 <!-- Depoimento 2: Juliana de Souza -->
-                <div class="dep-slide transition-all duration-500 absolute w-full px-6 opacity-0 translate-x-full">
-                    <div class="bg-white p-8 rounded-2xl shadow-md border border-slate-100 text-center">
-                        <p class="text-base text-slate-600 italic mb-4">"Levei calças para fazer a bainha original e ajustar a cintura. Trabalho extremamente limpo e rápido!"</p>
+                <div class="dep-slide transition-all duration-500 absolute w-full px-4 md:px-6 opacity-0 translate-x-full absolute inset-0">
+                    <div class="bg-white p-6 md:p-8 rounded-2xl shadow-md border border-slate-100 text-center">
+                        <p class="text-sm md:text-base text-slate-600 italic mb-4 leading-relaxed">"Levei calças para fazer a bainha original e ajustar a cintura. Trabalho extremamente limpo e rápido!"</p>
                         <span class="text-sm font-bold text-teal-700">— Juliana de Souza</span>
                     </div>
                 </div>
 
                 <!-- Depoimento 3: Beatriz Mendes -->
-                <div class="dep-slide transition-all duration-500 absolute w-full px-6 opacity-0 translate-x-full">
-                    <div class="bg-white p-8 rounded-2xl shadow-md border border-slate-100 text-center">
-                        <p class="text-base text-slate-600 italic mb-4">"Atendimento super exclusivo e atencioso. Salvou minhas roupas de festa que precisavam de ajustes urgentes."</p>
+                <div class="dep-slide transition-all duration-500 absolute w-full px-4 md:px-6 opacity-0 translate-x-full absolute inset-0">
+                    <div class="bg-white p-6 md:p-8 rounded-2xl shadow-md border border-slate-100 text-center">
+                        <p class="text-sm md:text-base text-slate-600 italic mb-4 leading-relaxed">"Atendimento super exclusivo e atencioso. Salvou minhas roupas de festa que precisavam de ajustes urgentes."</p>
                         <span class="text-sm font-bold text-teal-700">— Beatriz Mendes</span>
                     </div>
                 </div>
 
-                <!-- Depoimento 4: Thamy Dias (Novo) -->
-                <div class="dep-slide transition-all duration-500 absolute w-full px-6 opacity-0 translate-x-full">
-                    <div class="bg-white p-8 rounded-2xl shadow-md border border-slate-100 text-center">
-                        <p class="text-base text-slate-600 italic mb-4">"A Enilda foi um achado! Me atendeu extremamente bem, pensou em soluções que seriam melhores pra adaptar meu vestido do jeito que eu queria e a qualidade do trabalho dela foi perfeita. Recomendo muito!"</p>
+                <!-- Depoimento 4: Thamy Dias (Ajustado para mobile) -->
+                <div class="dep-slide transition-all duration-500 absolute w-full px-4 md:px-6 opacity-0 translate-x-full absolute inset-0">
+                    <div class="bg-white p-6 md:p-8 rounded-2xl shadow-md border border-slate-100 text-center">
+                        <p class="text-sm md:text-base text-slate-600 italic mb-4 leading-relaxed">"A Enilda foi um achado! Me atendeu extremamente bem, pensou em soluções que seriam melhores pra adaptar meu vestido do jeito que eu queria e a qualidade do trabalho dela foi perfeita. Recomendo muito!"</p>
                         <span class="text-sm font-bold text-teal-700">— Thamy Dias</span>
                     </div>
                 </div>
@@ -325,7 +325,7 @@
         </div>
     </section>
 
-    <!-- SEÇÃO QUEM SOMOS (APÓS A PROVA SOCIAL) -->
+    <!-- SEÇÃO QUEM SOMOS -->
     <section class="py-16 px-4 bg-white border-y border-slate-100">
         <div class="max-w-4xl mx-auto text-center">
             <span class="text-xs font-semibold text-teal-600 uppercase tracking-wider bg-teal-50 px-3 py-1 rounded-full">Nossa História & Atendimento</span>
@@ -598,10 +598,11 @@
         function mostrarSlide(index) {
             slides.forEach((slide, i) => {
                 if (i === index) {
-                    slide.classList.remove('opacity-0', 'translate-x-full', '-translate-x-full');
-                    slide.classList.add('opacity-100', 'translate-x-0');
+                    slide.classList.remove('opacity-0', 'translate-x-full', '-translate-x-full', 'absolute');
+                    slide.classList.add('opacity-100', 'translate-x-0', 'relative');
                 } else {
-                    slide.classList.remove('opacity-100', 'translate-x-0');
+                    slide.classList.remove('opacity-100', 'translate-x-0', 'relative');
+                    slide.classList.add('absolute');
                     if (i < index) {
                         slide.classList.add('-translate-x-full', 'opacity-0');
                     } else {
